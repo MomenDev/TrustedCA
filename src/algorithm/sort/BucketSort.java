@@ -6,4 +6,5 @@ package algorithm.sort;
  * description:
  **/
 public class BucketSort {
+
 }

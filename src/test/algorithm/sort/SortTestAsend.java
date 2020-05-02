@@ -1,13 +1,13 @@
 package test.algorithm.sort;
 
 import algorithm.sort.BubbleSort;
+import algorithm.sort.HeapSort;
 import algorithm.sort.MergeSort;
 import algorithm.sort.SelectionSort;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.Parameter;
 import org.junit.runners.Parameterized.Parameters;
 
 import java.util.Arrays;
@@ -99,6 +99,11 @@ public class SortTestAsend {
     @Test
     public void sortAscendMergeSort() {
         Assert.assertArrayEquals(fExpected, MergeSort.sortAscend(fInput));
+    }
+
+    @Test
+    public void HeapSortTest() {
+        Assert.assertArrayEquals(fExpected, HeapSort.sortAscend(fInput));
     }
 
 }
