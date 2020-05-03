@@ -1,9 +1,6 @@
 package test.algorithm.sort;
 
-import algorithm.sort.BubbleSort;
-import algorithm.sort.HeapSort;
-import algorithm.sort.MergeSort;
-import algorithm.sort.SelectionSort;
+import algorithm.sort.*;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -104,6 +101,26 @@ public class SortTestAsend {
     @Test
     public void HeapSortTest() {
         Assert.assertArrayEquals(fExpected, HeapSort.sortAscend(fInput));
+    }
+
+    @Test
+    public void QuickSortTest() {
+        Assert.assertArrayEquals(fExpected, QuickSort.sortAscend(fInput));
+    }
+
+    @Test
+    public void CountingSortTest() {
+        Assert.assertArrayEquals(fExpected, CountingSort.sortAscend(fInput));
+    }
+
+    @Test
+    public void BucketSortTest() {
+        Assert.assertArrayEquals(fExpected, BucketSort.sortAscend(fInput));
+    }
+
+    @Test
+    public void RadixSortTest() {
+        Assert.assertArrayEquals(fExpected, RadixSort.sortAscend(fInput));
     }
 
 }
